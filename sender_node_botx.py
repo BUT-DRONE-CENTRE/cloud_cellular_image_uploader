@@ -21,12 +21,12 @@ class BotXUploader(Node):
             self.image_callback,
             1 # QoS profile depth
         )
-        self.upload_url = "https://dcs.botx.cloud/static/02161038-ccdb-4a44-baf3-ee0eb56ab9ea/99995517-fcee-4a0c-8878-6ee451bac3cf/Images/Upload"
+        self.upload_url = "upload_url" #Replace with your storage url
 
     def request_botx_token(self):
         url = "https://api.botx.cloud/token"
-        email = "240415@vutbr.cz"  # Replace with your BotX email
-        password = "qwe123456"  # Replace with your BotX password
+        email = "mail"  # Replace with your BotX email
+        password = "heslo"  # Replace with your BotX password
 
         payload = json.dumps({
             "Email": email,
